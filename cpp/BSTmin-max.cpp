@@ -64,9 +64,11 @@ temp->left = NULL;
  int main()
 {
 	node * head = NULL;
-	int n,a; char ch='y';
-	while(ch=='y'){
+	int n,a; 
+	while(true){
+     
 	start:
+	clrscr();
   cout << "What operation you want to perform on tree:\n" <<"1. Insert\n 2. To find max element\n3. To find min element \n4.Exit";
 	cout<<"\n Enter your choice: "<<a;
   switch(a){
@@ -81,5 +83,7 @@ temp->left = NULL;
               getch();
               goto start;
   }
-  return 0;
+} 
+getch();  
+return 0;
   }
